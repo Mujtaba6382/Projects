@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="CSS Attribute Selector" />
+    <title>CSS Attribute Selector</title>
+    <style>
+      /*
+        syntax
+        selector[attribute]{
+            //properties
+        }
+        */
+      /*p[class] {
+        color: brown;
+      }
+      p[id="text"] {
+        color: yellow;
+      }*/
+      /*Applies colur: blue to the class attribute, whose value is starts with "col*/
+      /*p[class^="col"] {
+        color: blueviolet;
+      }*/
+      /* Applies color: darkclayn to the class attribute value has"-*/
+      /*p[class*="gre"] {
+        color: darkcyan;
+      }*/
+      /* Applies color: blue to the class with the value ends with "e"*/
+      p[class$="e"] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Attribute Selector</h1>
+    <p class="sample">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quidem
+      ipsa accusamus dignissimos laborum repudiandae labore nostrum autem
+      eveniet nesciunt.
+    </p>
+    <p class="color-blue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis ipsum
+      minima optio libero dolore a, dolores exercitationem ea perspiciatis!
+    </p>
+    <p class="color-green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis
+      maiores culpa praesentium dolores repudiandae nesciunt eveniet eaque odit
+      labore.
+    </p>
+    <p class="simple" id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tempora
+      architecto. Labore soluta cumque provident quas corporis architecto
+      aperiam eaque.
+    </p>
+  </body>
+</html>

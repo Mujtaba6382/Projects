@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="css-pesudo class" />
+    <title>css-pesudo class</title>
+    <style>
+      /*
+        pesudo class
+        pre-defined classes  can b e appliedto the element without explicitly 
+         1. link
+         2.visited
+         3.hover
+         4.active
+         selector : pseudoClassName {
+            properties
+         }     
+         */
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: blue;
+      }
+      a:hover {
+        text-transform: uppercase;
+      }
+      a:active {
+        color: crimson;
+        font-size: 33px;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css-pesudo class</h1>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Project</a>
+    <a href="#">Contact</a>
+  </body>
+</html>

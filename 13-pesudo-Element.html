@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Css-Pesudo Element" />
+    <title>Css-Pesudo Element</title>
+    <style>
+      /*
+        css-Pesudo Element
+        *All pseudo elements are inline*
+        1.before
+        2.after
+        3.first-letter
+
+        syntax
+        selector::pseudoElementName {
+            properties
+        }
+        */
+      h1::before {
+        display: block;
+        height: 25px;
+        background-color: coral;
+        content: "Hello";
+      }
+      h1 {
+        color: crimson;
+        text-align: center;
+      }
+      p::first-letter {
+        font-size: 42px;
+      }
+      h1::after {
+        display: block;
+        background-color: coral;
+        content: "Title";
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css-Pesudo Element</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+      repellat.
+    </p>
+  </body>
+</html>

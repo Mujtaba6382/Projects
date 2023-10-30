@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="css-Child selector" />
+    <title>css-Child selector</title>
+    <style>
+      /*
+        Child selector => parent => child
+        parentelementSelector > ChildElementSelector{
+            properties;
+        }
+        */
+      .subjects > .subject {
+        color: green;
+        text-transform: uppercase;
+      }
+      .container p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css-Child selector</h1>
+    <h2>List of subject</h2>
+    <ul class="subjects">
+      <li class="subject">English</li>
+      <li class="subject">Maths</li>
+      <li class="subject">Physics</li>
+      <li class="subject">Chemistry</li>
+      <li class="subject">Computer</li>
+    </ul>
+    <div class="container">
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
+        sequi.
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          repellendus!
+        </p>
+        <a href="#">Hello</a>
+        <p>
+          Lorem ipsum dolor sit amet. <a href="#">Lorem, ipsum dolor.</a>Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

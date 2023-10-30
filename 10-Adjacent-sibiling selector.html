@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="css-Adjacent sibiling selector" />
+    <title>css-Adjacent sibiling selector</title>
+    <style>
+      /*
+        Adjacent sibiling selector
+        selects only the first occurrance of the sibiling comes next imeediate to next sibiling
+        1.sibling =>children of same parent
+        2.adjacent => imeediate next sibiling (top-bottom)
+        sibiling_1 +sibiling -2{
+            properties;
+        }
+        */
+      p + div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css-Adjacent sibiling selector</h1>
+    <div>
+      <h2>Heading-2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam,
+        illo.
+      </p>
+      <div>
+        <h3>Heading -3</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div><p>Lorem ipsum dolor sit amet.</p></div>
+    <section>
+      <p>
+        Lorem ipsum dolor sit ame <a href="#">Lorem ipsum dolor sit amet.</a>
+      </p>
+      <h2>Another Heading -2</h2>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="CSS- Selectors-ID" />
+    <title>CSS- Selectors-ID</title>
+    <style>
+      /*
+        Selector
+        1.Id selector
+        1.Attribute => id ="Value"
+        value od "id" must br unique. same value of the id,must not be reprted Uniquly identify 
+        the specific element in a html page.
+
+        */
+      #head {
+        color: red;
+      }
+      #nav {
+        color: blue;
+      }
+
+      #head,
+      #nav {
+        text-decoration: underline;
+      }
+      /*Speficity*/
+      h1#nav {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="head">CSS- Selectors-ID</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit
+      amet nobis adipisci recusandae at, et natus molestias enim distinctio?
+    </p>
+    <h1 id="nav">Nav Bar</h1>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Project</li>
+      <li>Contact</li>
+    </ul>
+    <div>
+      <h2>Heading - 2</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur,
+        quo? Iusto, suscipit! Fugiat consequatur quo nemo aut laudantium facere
+        repellendus.
+      </p>
+      <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+      </ol>
+    </div>
+    <div>
+      ]
+      <h3>Heading - 3</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur,
+        quo? Iusto, suscipit! Fugiat consequatur quo nemo aut laudantium facere
+        repellendus.
+      </p>
+      <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+      </ol>
+    </div>
+  </body>
+</html>
